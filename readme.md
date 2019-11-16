@@ -1,5 +1,5 @@
 # Pseudo Assembler Interpreter
- Interpreter for pseudo assembler language. 
+ Interpreter to pseudo assembler language. 
  Faculty of Mathematics and Information Science. Warsaw University of Technology. 2019
 
 ------------
