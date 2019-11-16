@@ -1,0 +1,31 @@
+AA                DS INTEGER
+BB                DS INTEGER
+CC                DS INTEGER
+WYNIK             DS INTEGER
+ZERO              DC INTEGER(0)
+JEDEN             DC INTEGER(1)
+CZTERY            DC INTEGER(4)
+
+		  READ AA
+		  READ BB
+      		  READ CC
+
+                  L 1,BB
+                  MR 1,1
+                  L 2,CZTERY
+                  M 2,AA
+                  M 2,CC
+                  SR 1,2
+                  JP DWA_ROZWIAZANIA
+                  JZ JEDNO_ROZWIAZANIE
+                  JN ZERO_ROZWIAZAN
+
+DWA_ROZWIAZANIA   L 3,JEDEN
+                  AR 3,3
+                  J KONIEC_PROGRAMU
+JEDNO_ROZWIAZANIE L 3,JEDEN
+                  J KONIEC_PROGRAMU
+ZERO_ROZWIAZAN    L 3,ZERO
+                  J KONIEC_PROGRAMU
+
+KONIEC_PROGRAMU   ST 3,WYNIK
